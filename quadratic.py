@@ -1,16 +1,44 @@
 # Replace the "ANSWER HERE" for your answer
 
 def roots(a, b, c):
-    return "ANSWER HERE"
+    x=math.pow(b, 2)-(4*a*b)
+	if x<0:
+		return "( )"
+	raiz=(math.sqrt(x))
+	r1=(-b+raiz)/(2*a)
+	r2=(-b-raiz)/(2*a)
+	if r1==r2:
+		return f"({r1})"
+	else:
+		return f"({r1},{r2})"
 
 
 def value_y(a, b, c, x):
-    return "ANSWER HERE"
+    y= a*(math.pow(x, 2))+b*x+c
+	return y
 
 
 def to_string(a, b, c):
-    return "ANSWER HERE"
+    if a and b and c:
+		return f"f(x)={a} * X^2 + {b} * X + {c}"
+	elif a and b:
+		return f"f(x)={a} * X^2 + {b} * X"
+	elif not b and not c and a:
+		return f"f(x)={a} * X^2"
+	elif a and c:
+		return f"f(x)={a} * X^2 + {c}"
+	elif b and c:
+		return f"f(x)={b} * X + {c}"
+	elif not a  and not c and b:
+		return f"f(x)={b} * X"
+	elif not a and not b and c:
+		return f"f(x)={c}"
 
 
 def derivation(a, b):
-    return "ANSWER HERE"
+    if a and b:
+		return f"f(x)={2*a} * X + {b}"
+	elif not a:
+		return f"f(x)={b}"
+	elif not b:
+		return f"f(x)={2*a} * X"

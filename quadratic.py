@@ -19,18 +19,12 @@ def value_y(a, b, c, x):
 
 
 def to_string(a, b, c):
-    if a and b and c:
+	if a and b and c:
 		return f"f(x)={a} * X^2 + {b} * X + {c}"
-	elif a and b:
-		return f"f(x)={a} * X^2 + {b} * X"
-	elif not b and not c and a:
-		return f"f(x)={a} * X^2"
-	elif a and c:
-		return f"f(x)={a} * X^2 + {c}"
 	elif b and c:
 		return f"f(x)={b} * X + {c}"
-	elif not a  and not c and b:
-		return f"f(x)={b} * X"
+	elif a and c
+		return f"f(x)= {a} * X^2 + {c}
 	elif not a and not b and c:
 		return f"f(x)={c}"
 

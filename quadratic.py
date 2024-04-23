@@ -36,8 +36,14 @@ def to_string(a, b, c):
 
 
 def derivation(a, b):
-    if a and b:
-		return f"f(x)={2*a} * X + {b}"
+	if a and b:
+		return f"f'(x)={2*a} * X + {b}"
+	elif not a:
+		return f"f'(x)=b"
+	elif not b:
+		return f"f'(x)= {2 * a} + X"
+     
+	
 	elif not a:
 		return f"f(x)={b}"
 	elif not b:

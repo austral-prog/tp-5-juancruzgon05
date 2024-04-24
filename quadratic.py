@@ -1,7 +1,7 @@
 # Replace the "ANSWER HERE" for your answer
 
 def roots(a, b, c):
-    x=math.pow(b, 2)-(4*a*b)
+	x=math.pow(b, 2)-(4*a*b)
 	if x<0:
 		return "( )"
 	raiz=(math.sqrt(x))
@@ -14,7 +14,7 @@ def roots(a, b, c):
 
 
 def value_y(a, b, c, x):
-    y= a*(math.pow(x, 2))+b*x+c
+	y= a*(math.pow(x, 2))+b*x+c
 	return y
 
 
@@ -23,8 +23,8 @@ def to_string(a, b, c):
 		return f"f(x)={a} * X^2 + {b} * X + {c}"
 	elif b and c:
 		return f"f(x)={b} * X + {c}"
-	elif a and c
-		return f"f(x)= {a} * X^2 + {c}
+	elif a and c:
+		return f"f(x)= {a} * X^2 + {c}"
 	elif not a and not b and c:
 		return f"f(x)={c}"
 
